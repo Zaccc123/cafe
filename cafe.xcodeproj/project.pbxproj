@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113BD1CD1DD6D7990056B504 /* tomato_pasta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 113BD1CC1DD6D7990056B504 /* tomato_pasta.jpg */; };
+		113BD1CF1DD6D95C0056B504 /* truffles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 113BD1CE1DD6D95C0056B504 /* truffles.gif */; };
 		11E83B771DD6C8B100414210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E83B761DD6C8B100414210 /* AppDelegate.swift */; };
 		11E83B791DD6C8B100414210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E83B781DD6C8B100414210 /* ViewController.swift */; };
 		11E83B7C1DD6C8B100414210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E83B7A1DD6C8B100414210 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113BD1CC1DD6D7990056B504 /* tomato_pasta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomato_pasta.jpg; sourceTree = "<group>"; };
+		113BD1CE1DD6D95C0056B504 /* truffles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = truffles.gif; sourceTree = "<group>"; };
 		11E83B731DD6C8B100414210 /* cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E83B761DD6C8B100414210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E83B781DD6C8B100414210 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				11E83B7D1DD6C8B100414210 /* Assets.xcassets */,
 				11E83B7F1DD6C8B100414210 /* LaunchScreen.storyboard */,
 				11E83B821DD6C8B100414210 /* Info.plist */,
+				113BD1CC1DD6D7990056B504 /* tomato_pasta.jpg */,
+				113BD1CE1DD6D95C0056B504 /* truffles.gif */,
 			);
 			path = cafe;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					11E83B721DD6C8B100414210 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VLX24NPY57;
 						ProvisioningStyle = Automatic;
 					};
 					11E83B861DD6C8B200414210 = {
@@ -235,6 +242,8 @@
 				11E83B811DD6C8B100414210 /* LaunchScreen.storyboard in Resources */,
 				11E83B7E1DD6C8B100414210 /* Assets.xcassets in Resources */,
 				11E83B7C1DD6C8B100414210 /* Main.storyboard in Resources */,
+				113BD1CF1DD6D95C0056B504 /* truffles.gif in Resources */,
+				113BD1CD1DD6D7990056B504 /* tomato_pasta.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLX24NPY57;
 				INFOPLIST_FILE = cafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeta.cafe;
@@ -422,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLX24NPY57;
 				INFOPLIST_FILE = cafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeta.cafe;
@@ -503,6 +514,7 @@
 				11E83B9D1DD6C8B200414210 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11E83B9E1DD6C8B200414210 /* Build configuration list for PBXNativeTarget "cafeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +523,7 @@
 				11E83BA01DD6C8B200414210 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11E83BA11DD6C8B200414210 /* Build configuration list for PBXNativeTarget "cafeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +532,7 @@
 				11E83BA31DD6C8B200414210 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

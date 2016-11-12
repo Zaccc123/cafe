@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+        center.requestAuthorization (options: [.alert, .sound]) {(accepted, error) in
+            if !accepted {
+                print("Should show some kind of alert here; let let user know that they can enable it in settings page if needed.")
+            }
+        }
+
+        let snoozeAction = UNNotificationAction(identifier: "Snooze", title: "5 more sec", options: [])
+        let okayAction = UNNotificationAction(identifier: "Okay", title: "Okay", options: [.destructive])
+        let category = UNNotificationCategory(identifier: "ReminderCategory", actions: [snoozeAction,okayAction], intentIdentifiers: [], options: [])
+        center.setNotificationCategories([category])
+
         return true
     }
 
@@ -42,5 +56,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        if response.actionIdentifier == "Snooze" {
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let request = UNNotificationRequest(identifier: response.notification.request.identifier, content: response.notification.request.content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request) { error in
+                if let error = error {
+                    print(error)
+                }
+            }
+        }
+        completionHandler()
+    }
 }
 
