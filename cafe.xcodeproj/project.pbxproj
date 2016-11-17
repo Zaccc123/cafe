@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110A22921DDDD5CE00534B69 /* CafeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110A22911DDDD5CE00534B69 /* CafeNotification.swift */; };
 		113BD1CD1DD6D7990056B504 /* tomato_pasta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 113BD1CC1DD6D7990056B504 /* tomato_pasta.jpg */; };
 		113BD1CF1DD6D95C0056B504 /* truffles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 113BD1CE1DD6D95C0056B504 /* truffles.gif */; };
 		11E83B771DD6C8B100414210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E83B761DD6C8B100414210 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110A22911DDDD5CE00534B69 /* CafeNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeNotification.swift; sourceTree = "<group>"; };
 		113BD1CC1DD6D7990056B504 /* tomato_pasta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomato_pasta.jpg; sourceTree = "<group>"; };
 		113BD1CE1DD6D95C0056B504 /* truffles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = truffles.gif; sourceTree = "<group>"; };
 		11E83B731DD6C8B100414210 /* cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				11E83B761DD6C8B100414210 /* AppDelegate.swift */,
+				110A22911DDDD5CE00534B69 /* CafeNotification.swift */,
 				11E83B781DD6C8B100414210 /* ViewController.swift */,
 				11E83B7A1DD6C8B100414210 /* Main.storyboard */,
 				11E83B7D1DD6C8B100414210 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110A22921DDDD5CE00534B69 /* CafeNotification.swift in Sources */,
 				11E83B791DD6C8B100414210 /* ViewController.swift in Sources */,
 				11E83B771DD6C8B100414210 /* AppDelegate.swift in Sources */,
 			);
