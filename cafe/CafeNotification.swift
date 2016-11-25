@@ -9,10 +9,15 @@
 import Foundation
 import UserNotifications
 
+enum CafeNotificationCategory: String {
+    case ServeLater = "ReminderCategory"
+    case SoldOut = "OrderOtherItemCategory"
+}
+
 protocol CafeNotification {
     
     func schedule(content: UNNotificationContent, secFromNow: TimeInterval)
-    func createNotificationContent(title: String, text: String, attachment: String?, action: Bool) -> UNNotificationContent
+    func createNotificationContent(title: String, text: String, attachment: String?, category: CafeNotificationCategory?) -> UNNotificationContent
 }
 
 extension CafeNotification {
@@ -31,7 +36,7 @@ extension CafeNotification {
         }
     }
 
-    func createNotificationContent(title: String, text: String, attachment: String?, action: Bool = false) -> UNNotificationContent {
+    func createNotificationContent(title: String, text: String, attachment: String? = nil, category: CafeNotificationCategory? = nil) -> UNNotificationContent {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = text
@@ -41,9 +46,10 @@ extension CafeNotification {
             setAttachmentForNotification(content: content, attachment: attachment)
         }
 
-        if action {
-            content.categoryIdentifier = "ReminderCategory"
+        if let category = category {
+            content.categoryIdentifier = category.rawValue
         }
+        
         return content
     }
 

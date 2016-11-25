@@ -90,27 +90,61 @@
                                     <action selector="pastaOrderButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o50-59-jip"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="truffle_cheese_cake" translatesAutoresizingMaskIntoConstraints="NO" id="Ptq-Vh-8RJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steak" translatesAutoresizingMaskIntoConstraints="NO" id="qNE-tB-qBL">
                                 <rect key="frame" x="16" y="256" width="128" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="SFn-wy-cYM"/>
+                                    <constraint firstAttribute="height" constant="96" id="mQf-fq-OM0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmh-2M-gKl">
+                                <rect key="frame" x="152" y="256" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.30196078430000001" green="0.28235294119999998" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So good that usually sold out in 6 seconds!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1B-bv-OPw">
+                                <rect key="frame" x="152" y="279" width="207" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCc-dv-IaQ">
+                                <rect key="frame" x="259" y="318.5" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.30333483220000002" green="0.28151300550000002" blue="0.37902623410000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jyp-uV-pk0"/>
+                                    <constraint firstAttribute="width" constant="100" id="Y6O-r6-Vgh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <state key="normal" title="ORDER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="steakOrderButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIr-4o-qXR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="truffle_cheese_cake" translatesAutoresizingMaskIntoConstraints="NO" id="Ptq-Vh-8RJ">
+                                <rect key="frame" x="16" y="374" width="128" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="teH-iF-SQD"/>
                                     <constraint firstAttribute="width" constant="128" id="yk6-De-8if"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheesecake Truffles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDC-2k-r3z">
-                                <rect key="frame" x="152" y="256" width="168.5" height="21"/>
+                                <rect key="frame" x="152" y="374" width="168.5" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.30196078430000001" green="0.28235294119999998" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freshly brew coffee, serve in 3 seconds!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge7-nb-WVJ">
-                                <rect key="frame" x="152" y="279" width="207" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheesecake Truffles ready to serve to you in 7 seconds!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge7-nb-WVJ">
+                                <rect key="frame" x="152" y="397" width="207" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNB-1m-hFH">
-                                <rect key="frame" x="259" y="318" width="100" height="30"/>
+                                <rect key="frame" x="259" y="436" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.30333483220000002" green="0.28151300550000002" blue="0.37902623410000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Eio-GL-6xC"/>
@@ -128,31 +162,40 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QbM-Nl-fb8" firstAttribute="top" secondItem="xsj-23-OKm" secondAttribute="top" id="0HJ-pg-SG3"/>
+                            <constraint firstItem="Lmh-2M-gKl" firstAttribute="top" secondItem="qNE-tB-qBL" secondAttribute="top" id="3bw-q0-21h"/>
                             <constraint firstItem="kT6-nf-Sav" firstAttribute="leading" secondItem="MlX-RJ-KfS" secondAttribute="leading" id="4wi-wr-7cD"/>
+                            <constraint firstItem="eCc-dv-IaQ" firstAttribute="trailing" secondItem="Z1B-bv-OPw" secondAttribute="trailing" id="6kr-So-tqX"/>
                             <constraint firstItem="kIk-ML-nnp" firstAttribute="top" secondItem="gZO-Vc-zXD" secondAttribute="bottom" constant="6" id="7SL-2W-XJQ"/>
+                            <constraint firstItem="Ptq-Vh-8RJ" firstAttribute="top" secondItem="qNE-tB-qBL" secondAttribute="bottom" constant="22" id="86H-vt-yq8"/>
                             <constraint firstItem="ge7-nb-WVJ" firstAttribute="top" secondItem="dDC-2k-r3z" secondAttribute="bottom" constant="2" id="8MI-wU-Tpa"/>
                             <constraint firstItem="gZO-Vc-zXD" firstAttribute="leading" secondItem="QbM-Nl-fb8" secondAttribute="leading" id="BFu-Rm-8GZ"/>
                             <constraint firstItem="dDC-2k-r3z" firstAttribute="top" secondItem="Ptq-Vh-8RJ" secondAttribute="top" id="GXl-Vh-a4E"/>
+                            <constraint firstItem="qNE-tB-qBL" firstAttribute="top" secondItem="4vE-md-IRZ" secondAttribute="bottom" constant="22" id="I2o-0O-Iji"/>
                             <constraint firstItem="DNB-1m-hFH" firstAttribute="top" secondItem="ge7-nb-WVJ" secondAttribute="bottom" constant="6" id="IRe-nL-AqE"/>
                             <constraint firstItem="4vE-md-IRZ" firstAttribute="leading" secondItem="xsj-23-OKm" secondAttribute="leading" id="KHR-WF-d17"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kIk-ML-nnp" secondAttribute="trailing" id="LGP-hT-lk5"/>
                             <constraint firstItem="FVO-Ot-TU8" firstAttribute="trailing" secondItem="kT6-nf-Sav" secondAttribute="trailing" id="MA0-8C-Qg7"/>
+                            <constraint firstItem="qNE-tB-qBL" firstAttribute="leading" secondItem="4vE-md-IRZ" secondAttribute="leading" id="PJc-Bp-yzN"/>
                             <constraint firstItem="gZO-Vc-zXD" firstAttribute="top" secondItem="QbM-Nl-fb8" secondAttribute="bottom" constant="2" id="Pwx-BC-Fmn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ge7-nb-WVJ" secondAttribute="trailing" id="Th4-Pg-SsA"/>
                             <constraint firstItem="DNB-1m-hFH" firstAttribute="trailing" secondItem="ge7-nb-WVJ" secondAttribute="trailing" id="Uen-J8-cJv"/>
+                            <constraint firstItem="eCc-dv-IaQ" firstAttribute="top" secondItem="Z1B-bv-OPw" secondAttribute="bottom" constant="6" id="VGe-Pl-KCb"/>
+                            <constraint firstItem="Z1B-bv-OPw" firstAttribute="top" secondItem="Lmh-2M-gKl" secondAttribute="bottom" constant="2" id="Vj4-7u-5wk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z1B-bv-OPw" secondAttribute="trailing" id="Y1A-qr-dhu"/>
                             <constraint firstItem="xsj-23-OKm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aYY-T9-Sfq"/>
                             <constraint firstItem="MlX-RJ-KfS" firstAttribute="leading" secondItem="4vE-md-IRZ" secondAttribute="trailing" constant="8" id="aa0-mC-TlO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kT6-nf-Sav" secondAttribute="trailing" id="cU8-MU-6WU"/>
                             <constraint firstItem="ge7-nb-WVJ" firstAttribute="leading" secondItem="dDC-2k-r3z" secondAttribute="leading" id="deW-pe-hBs"/>
                             <constraint firstItem="dDC-2k-r3z" firstAttribute="leading" secondItem="Ptq-Vh-8RJ" secondAttribute="trailing" constant="8" id="fht-AZ-hEX"/>
+                            <constraint firstItem="Z1B-bv-OPw" firstAttribute="leading" secondItem="Lmh-2M-gKl" secondAttribute="leading" id="hK9-Xt-W79"/>
                             <constraint firstItem="4vE-md-IRZ" firstAttribute="top" secondItem="xsj-23-OKm" secondAttribute="bottom" constant="22" id="k8R-Fj-eYN"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Ptq-Vh-8RJ" secondAttribute="leading" id="ku6-g5-XNL"/>
                             <constraint firstAttribute="leadingMargin" secondItem="xsj-23-OKm" secondAttribute="leading" id="nAp-3d-Wvy"/>
                             <constraint firstItem="MlX-RJ-KfS" firstAttribute="top" secondItem="4vE-md-IRZ" secondAttribute="top" id="o0S-ES-U00"/>
                             <constraint firstItem="QbM-Nl-fb8" firstAttribute="leading" secondItem="xsj-23-OKm" secondAttribute="trailing" constant="8" id="oAi-Cm-MRJ"/>
                             <constraint firstItem="kT6-nf-Sav" firstAttribute="top" secondItem="MlX-RJ-KfS" secondAttribute="bottom" constant="2" id="p33-V8-dHz"/>
+                            <constraint firstItem="Lmh-2M-gKl" firstAttribute="leading" secondItem="qNE-tB-qBL" secondAttribute="trailing" constant="8" id="q4s-as-KUc"/>
                             <constraint firstItem="FVO-Ot-TU8" firstAttribute="top" secondItem="kT6-nf-Sav" secondAttribute="bottom" constant="6" id="shj-ZF-syx"/>
-                            <constraint firstItem="Ptq-Vh-8RJ" firstAttribute="top" secondItem="4vE-md-IRZ" secondAttribute="bottom" constant="22" id="v4G-VK-eqg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gZO-Vc-zXD" secondAttribute="trailing" id="v86-9e-vXN"/>
                         </constraints>
                     </view>
@@ -167,7 +210,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eVd-ui-tmh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Y6m-OM-CN6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Y6m-OM-CN6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.89711445570000004" green="0.89779645200000002" blue="0.89722007510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -184,6 +227,7 @@
     </scenes>
     <resources>
         <image name="flat_white" width="320" height="240"/>
+        <image name="steak" width="320" height="240"/>
         <image name="tomato_pasta" width="320" height="240"/>
         <image name="truffle_cheese_cake" width="320" height="240"/>
     </resources>

@@ -23,7 +23,7 @@ class ViewController: UIViewController, CafeNotification {
 
     //MARK: - User Interactions
     @IBAction func coffeeOrderButtonPressed(_ sender: UIButton) {
-        let content = createNotificationContent(title: "Flat White", text: "Your freshly brew flat white is ready!", attachment: nil)
+        let content = createNotificationContent(title: "Flat White", text: "Your freshly brew flat white is ready!")
         schedule(content: content, secFromNow: 3)
     }
 
@@ -32,8 +32,13 @@ class ViewController: UIViewController, CafeNotification {
         schedule(content: content, secFromNow: 5)
     }
 
+    @IBAction func steakOrderButtonPressed(_ sender: UIButton) {
+        let content = createNotificationContent(title: "Steak", text: "Sorry, we run out of steak. Would you like to order something else?", category: .SoldOut)
+        schedule(content: content, secFromNow: 7)
+    }
+
     @IBAction func dessertOrderButtonPressed(_ sender: UIButton) {
-        let content = createNotificationContent(title: "Cheesecake Truffles", text: "Should we serve your dessert now?", attachment: "truffles.gif", action: true)
+        let content = createNotificationContent(title: "Cheesecake Truffles", text: "Should we serve your dessert now?", attachment: "truffles.gif", category: .ServeLater)
         schedule(content: content, secFromNow: 7)
     }
 }

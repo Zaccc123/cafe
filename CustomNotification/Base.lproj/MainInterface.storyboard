@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="CustomNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steak" translatesAutoresizingMaskIntoConstraints="NO" id="gTv-zm-srX">
+                                <rect key="frame" x="60" y="20" width="201" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="B7O-a8-pEi"/>
+                                    <constraint firstAttribute="height" constant="151" id="Wjf-Mu-LSM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flat White" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcP-nB-maE">
+                                <rect key="frame" x="119" y="190" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.30196078430000001" green="0.28235294119999998" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freshly brew coffee, serve in 3 seconds!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abK-eo-H8a">
+                                <rect key="frame" x="32" y="219" width="257" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Mjv-vI-2ol"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOLD OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1U-Yj-22o">
+                                <rect key="frame" x="105" y="82.5" width="111" height="26.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.7920087576" green="0.021018600089999999" blue="0.3030207157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89711445570000004" green="0.89779645200000002" blue="0.89722007510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FcP-nB-maE" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="A0Y-08-rM5"/>
+                            <constraint firstItem="V1U-Yj-22o" firstAttribute="centerX" secondItem="gTv-zm-srX" secondAttribute="centerX" id="DeK-d1-F0k"/>
+                            <constraint firstItem="FcP-nB-maE" firstAttribute="top" secondItem="gTv-zm-srX" secondAttribute="bottom" constant="19" id="ELT-H6-pRH"/>
+                            <constraint firstItem="gTv-zm-srX" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="QCK-x3-imp"/>
+                            <constraint firstItem="abK-eo-H8a" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="Qnu-wG-df4"/>
+                            <constraint firstItem="abK-eo-H8a" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="15.5" id="jMj-hb-6rZ"/>
+                            <constraint firstItem="gTv-zm-srX" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="20" id="kGL-U3-vsW"/>
+                            <constraint firstItem="V1U-Yj-22o" firstAttribute="centerY" secondItem="gTv-zm-srX" secondAttribute="centerY" id="mmn-4S-XgQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="abK-eo-H8a" secondAttribute="trailing" constant="15.5" id="pfK-LW-0dY"/>
+                            <constraint firstItem="abK-eo-H8a" firstAttribute="top" secondItem="FcP-nB-maE" secondAttribute="bottom" constant="8" id="ssb-5N-MB0"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="abK-eo-H8a" id="sci-7V-Uex"/>
+                        <outlet property="titleLabel" destination="FcP-nB-maE" id="GZ8-Ah-eLa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.600000000000001" y="37.781109445277366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="steak" width="320" height="240"/>
+    </resources>
+</document>

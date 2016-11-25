@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		110A22921DDDD5CE00534B69 /* CafeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110A22911DDDD5CE00534B69 /* CafeNotification.swift */; };
+		113009841DE80D7200074BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E83B7D1DD6C8B100414210 /* Assets.xcassets */; };
 		113BD1CD1DD6D7990056B504 /* tomato_pasta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 113BD1CC1DD6D7990056B504 /* tomato_pasta.jpg */; };
 		113BD1CF1DD6D95C0056B504 /* truffles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 113BD1CE1DD6D95C0056B504 /* truffles.gif */; };
+		1169427E1DE70EC0003A56DF /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1169427D1DE70EC0003A56DF /* UserNotifications.framework */; };
+		116942801DE70EC0003A56DF /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1169427F1DE70EC0003A56DF /* UserNotificationsUI.framework */; };
+		116942831DE70EC0003A56DF /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116942821DE70EC0003A56DF /* NotificationViewController.swift */; };
+		116942861DE70EC0003A56DF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116942841DE70EC0003A56DF /* MainInterface.storyboard */; };
+		1169428A1DE70EC0003A56DF /* CustomNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1169427B1DE70EC0003A56DF /* CustomNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		11E83B771DD6C8B100414210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E83B761DD6C8B100414210 /* AppDelegate.swift */; };
 		11E83B791DD6C8B100414210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E83B781DD6C8B100414210 /* ViewController.swift */; };
 		11E83B7C1DD6C8B100414210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E83B7A1DD6C8B100414210 /* Main.storyboard */; };
@@ -20,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		116942881DE70EC0003A56DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E83B6B1DD6C8B100414210 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1169427A1DE70EC0003A56DF;
+			remoteInfo = CustomNotification;
+		};
 		11E83B881DD6C8B200414210 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11E83B6B1DD6C8B100414210 /* Project object */;
@@ -36,10 +49,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1169428E1DE70EC0003A56DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1169428A1DE70EC0003A56DF /* CustomNotification.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		110A22911DDDD5CE00534B69 /* CafeNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeNotification.swift; sourceTree = "<group>"; };
 		113BD1CC1DD6D7990056B504 /* tomato_pasta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomato_pasta.jpg; sourceTree = "<group>"; };
 		113BD1CE1DD6D95C0056B504 /* truffles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = truffles.gif; sourceTree = "<group>"; };
+		1169427B1DE70EC0003A56DF /* CustomNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1169427D1DE70EC0003A56DF /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		1169427F1DE70EC0003A56DF /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		116942821DE70EC0003A56DF /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		116942851DE70EC0003A56DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		116942871DE70EC0003A56DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11E83B731DD6C8B100414210 /* cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E83B761DD6C8B100414210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E83B781DD6C8B100414210 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +89,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		116942781DE70EC0003A56DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116942801DE70EC0003A56DF /* UserNotificationsUI.framework in Frameworks */,
+				1169427E1DE70EC0003A56DF /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11E83B701DD6C8B100414210 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,12 +122,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1169427C1DE70EC0003A56DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1169427D1DE70EC0003A56DF /* UserNotifications.framework */,
+				1169427F1DE70EC0003A56DF /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		116942811DE70EC0003A56DF /* CustomNotification */ = {
+			isa = PBXGroup;
+			children = (
+				116942821DE70EC0003A56DF /* NotificationViewController.swift */,
+				116942841DE70EC0003A56DF /* MainInterface.storyboard */,
+				116942871DE70EC0003A56DF /* Info.plist */,
+			);
+			path = CustomNotification;
+			sourceTree = "<group>";
+		};
 		11E83B6A1DD6C8B100414210 = {
 			isa = PBXGroup;
 			children = (
 				11E83B751DD6C8B100414210 /* cafe */,
 				11E83B8A1DD6C8B200414210 /* cafeTests */,
 				11E83B951DD6C8B200414210 /* cafeUITests */,
+				116942811DE70EC0003A56DF /* CustomNotification */,
+				1169427C1DE70EC0003A56DF /* Frameworks */,
 				11E83B741DD6C8B100414210 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +159,7 @@
 				11E83B731DD6C8B100414210 /* cafe.app */,
 				11E83B871DD6C8B200414210 /* cafeTests.xctest */,
 				11E83B921DD6C8B200414210 /* cafeUITests.xctest */,
+				1169427B1DE70EC0003A56DF /* CustomNotification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +201,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1169427A1DE70EC0003A56DF /* CustomNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1169428D1DE70EC0003A56DF /* Build configuration list for PBXNativeTarget "CustomNotification" */;
+			buildPhases = (
+				116942771DE70EC0003A56DF /* Sources */,
+				116942781DE70EC0003A56DF /* Frameworks */,
+				116942791DE70EC0003A56DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomNotification;
+			productName = CustomNotification;
+			productReference = 1169427B1DE70EC0003A56DF /* CustomNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		11E83B721DD6C8B100414210 /* cafe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11E83B9B1DD6C8B200414210 /* Build configuration list for PBXNativeTarget "cafe" */;
@@ -144,10 +225,12 @@
 				11E83B6F1DD6C8B100414210 /* Sources */,
 				11E83B701DD6C8B100414210 /* Frameworks */,
 				11E83B711DD6C8B100414210 /* Resources */,
+				1169428E1DE70EC0003A56DF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				116942891DE70EC0003A56DF /* PBXTargetDependency */,
 			);
 			name = cafe;
 			productName = cafe;
@@ -200,6 +283,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = zeta;
 				TargetAttributes = {
+					1169427A1DE70EC0003A56DF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VLX24NPY57;
+						ProvisioningStyle = Automatic;
+					};
 					11E83B721DD6C8B100414210 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = VLX24NPY57;
@@ -233,11 +321,21 @@
 				11E83B721DD6C8B100414210 /* cafe */,
 				11E83B861DD6C8B200414210 /* cafeTests */,
 				11E83B911DD6C8B200414210 /* cafeUITests */,
+				1169427A1DE70EC0003A56DF /* CustomNotification */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		116942791DE70EC0003A56DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113009841DE80D7200074BD0 /* Assets.xcassets in Resources */,
+				116942861DE70EC0003A56DF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11E83B711DD6C8B100414210 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +365,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		116942771DE70EC0003A56DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116942831DE70EC0003A56DF /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11E83B6F1DD6C8B100414210 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +402,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		116942891DE70EC0003A56DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1169427A1DE70EC0003A56DF /* CustomNotification */;
+			targetProxy = 116942881DE70EC0003A56DF /* PBXContainerItemProxy */;
+		};
 		11E83B891DD6C8B200414210 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 11E83B721DD6C8B100414210 /* cafe */;
@@ -309,6 +420,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		116942841DE70EC0003A56DF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				116942851DE70EC0003A56DF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		11E83B7A1DD6C8B100414210 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -328,6 +447,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1169428B1DE70EC0003A56DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VLX24NPY57;
+				INFOPLIST_FILE = CustomNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeta.cafe.CustomNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1169428C1DE70EC0003A56DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VLX24NPY57;
+				INFOPLIST_FILE = CustomNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeta.cafe.CustomNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		11E83B991DD6C8B200414210 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,6 +567,7 @@
 		11E83B9C1DD6C8B200414210 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VLX24NPY57;
 				INFOPLIST_FILE = cafe/Info.plist;
@@ -435,6 +581,7 @@
 		11E83B9D1DD6C8B200414210 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VLX24NPY57;
 				INFOPLIST_FILE = cafe/Info.plist;
@@ -502,6 +649,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1169428D1DE70EC0003A56DF /* Build configuration list for PBXNativeTarget "CustomNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1169428B1DE70EC0003A56DF /* Debug */,
+				1169428C1DE70EC0003A56DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		11E83B6E1DD6C8B100414210 /* Build configuration list for PBXProject "cafe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
