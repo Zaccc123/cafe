@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let okayAction = UNNotificationAction(identifier: "Okay", title: "Okay", options: [.destructive])
 
         let serveLaterCategory = UNNotificationCategory(identifier: CafeNotificationCategory.ServeLater.rawValue, actions: [snoozeAction, okayAction], intentIdentifiers: [], options: [])
-        let orderOtherCategory = UNNotificationCategory(identifier: CafeNotificationCategory.SoldOut.rawValue, actions: [stormOutAction, okayAction], intentIdentifiers: [], options: [])
+        let cancelOrderCategory = UNNotificationCategory(identifier: CafeNotificationCategory.SoldOut.rawValue, actions: [stormOutAction, okayAction], intentIdentifiers: [], options: [])
 
-        center.setNotificationCategories([serveLaterCategory, orderOtherCategory])
+        center.setNotificationCategories([serveLaterCategory, cancelOrderCategory])
 
         return true
     }

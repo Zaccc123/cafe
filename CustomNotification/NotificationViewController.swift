@@ -29,7 +29,6 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     }
 
     func didReceive(_ notification: UNNotification) {
-
         self.titleLabel.text = notification.request.content.title
         self.bodyLabel?.text = notification.request.content.body
     }

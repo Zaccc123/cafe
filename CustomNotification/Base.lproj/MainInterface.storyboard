@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freshly brew coffee, serve in 3 seconds!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abK-eo-H8a">
-                                <rect key="frame" x="32" y="219" width="257" height="53"/>
+                                <rect key="frame" x="31.5" y="219" width="257" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="Mjv-vI-2ol"/>
                                 </constraints>
@@ -59,10 +58,8 @@
                             <constraint firstItem="FcP-nB-maE" firstAttribute="top" secondItem="gTv-zm-srX" secondAttribute="bottom" constant="19" id="ELT-H6-pRH"/>
                             <constraint firstItem="gTv-zm-srX" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="QCK-x3-imp"/>
                             <constraint firstItem="abK-eo-H8a" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="Qnu-wG-df4"/>
-                            <constraint firstItem="abK-eo-H8a" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="15.5" id="jMj-hb-6rZ"/>
                             <constraint firstItem="gTv-zm-srX" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="20" id="kGL-U3-vsW"/>
                             <constraint firstItem="V1U-Yj-22o" firstAttribute="centerY" secondItem="gTv-zm-srX" secondAttribute="centerY" id="mmn-4S-XgQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="abK-eo-H8a" secondAttribute="trailing" constant="15.5" id="pfK-LW-0dY"/>
                             <constraint firstItem="abK-eo-H8a" firstAttribute="top" secondItem="FcP-nB-maE" secondAttribute="bottom" constant="8" id="ssb-5N-MB0"/>
                         </constraints>
                     </view>
