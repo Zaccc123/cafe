@@ -8,9 +8,9 @@ A detailed blog post on this topic can be view [here](https://bot-zeta.herokuapp
 
 Screenshot of the apps:
 
-<img src="https://project-zeta.s3-ap-southeast-1.amazonaws.com/post/2/menu.png" width="220">
-<img src="https://project-zeta.s3-ap-southeast-1.amazonaws.com/post/2/notification_image.png" width="220">
-<img src="https://project-zeta.s3-ap-southeast-1.amazonaws.com/post/2/notification_force_touch.png" width="220">
+<img src="menu.png" width="220">
+<img src="notification_image.png" width="220">
+<img src="notification_force_touch.png" width="220">
 
 
 ### Version Info
